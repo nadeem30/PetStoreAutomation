@@ -22,10 +22,13 @@ public class Routes {
 	
 	//Store module
         //Here we need to create Store module URL's
-	
+	public static String store_post_url=base_url+"/store/order";
+	public static String store_get_url=base_url+"/store/order/{orderId}";
+	public static String store_delete_url=base_url+"/store/order/{orderId}";
 	
 	//Pet module
     //Here we need to create Pet module URL's
+	
 	
 	
 
