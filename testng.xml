@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="PetStoreSuite">
+<suite name="PetStoreSuite" parallel="classes" thread-count="2">
 <listeners>
  <listener class-name="api.utilities.ExtentReportManager" />
 </listeners>
@@ -8,7 +8,7 @@
   <test thread-count="5" name="PetStoreTest">
     <classes>
        <class name="api.test.UserTests"/>
-       <!--<class name="api.test.DDTests"/>-->
+       <class name="api.test.DDTests"/>
     </classes>
   </test> <!-- PetStoreTest -->
 </suite> <!-- PetStoreSuite -->

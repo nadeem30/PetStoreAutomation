@@ -1,9 +1,87 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 14, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 42.60 s <<< FAILURE! -- in TestSuite
-api.test.DDTests.testDeleteUser[testuser1](1) -- Time elapsed: 3.222 s <<< FAILURE!
-java.lang.AssertionError: expected [200] but found [404]
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 16 13:08:40 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>42 seconds (42060 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='api.test.DDTests.testDeleteUser()'><b>testDeleteUser</b><br>Test class: api.test.DDTests<br>Parameters: testuser5</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [404]
+	at api.test.DDTests.testDeleteUser(DDTests.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace887785215", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace887785215'><pre>java.lang.AssertionError: expected [200] but found [404]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -44,9 +122,16 @@ java.lang.AssertionError: expected [200] but found [404]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-api.test.DDTests.testDeleteUser[testuser2](2) -- Time elapsed: 3.175 s <<< FAILURE!
-java.lang.AssertionError: expected [200] but found [404]
+</pre></div></td>
+<td>3</td>
+<td>api.test.DDTests@23f7d05d</td></tr>
+<tr>
+<td title='api.test.DDTests.testDeleteUser()'><b>testDeleteUser</b><br>Test class: api.test.DDTests<br>Parameters: testuser2</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [404]
+	at api.test.DDTests.testDeleteUser(DDTests.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace198220326", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace198220326'><pre>java.lang.AssertionError: expected [200] but found [404]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -87,9 +172,16 @@ java.lang.AssertionError: expected [200] but found [404]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-api.test.DDTests.testDeleteUser[testuser4](4) -- Time elapsed: 3.145 s <<< FAILURE!
-java.lang.AssertionError: expected [200] but found [404]
+</pre></div></td>
+<td>3</td>
+<td>api.test.DDTests@23f7d05d</td></tr>
+<tr>
+<td title='api.test.DDTests.testDeleteUser()'><b>testDeleteUser</b><br>Test class: api.test.DDTests<br>Parameters: testuser1</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [404]
+	at api.test.DDTests.testDeleteUser(DDTests.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1799078390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1799078390'><pre>java.lang.AssertionError: expected [200] but found [404]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -130,9 +222,16 @@ java.lang.AssertionError: expected [200] but found [404]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
-api.test.DDTests.testDeleteUser[testuser5](5) -- Time elapsed: 3.236 s <<< FAILURE!
-java.lang.AssertionError: expected [200] but found [404]
+</pre></div></td>
+<td>3</td>
+<td>api.test.DDTests@23f7d05d</td></tr>
+<tr>
+<td title='api.test.DDTests.testDeleteUser()'><b>testDeleteUser</b><br>Test class: api.test.DDTests<br>Parameters: testuser4</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [404]
+	at api.test.DDTests.testDeleteUser(DDTests.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace888980963", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace888980963'><pre>java.lang.AssertionError: expected [200] but found [404]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -173,4 +272,68 @@ java.lang.AssertionError: expected [200] but found [404]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-
+</pre></div></td>
+<td>3</td>
+<td>api.test.DDTests@23f7d05d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='api.test.DDTests.testDeleteUser()'><b>testDeleteUser</b><br>Test class: api.test.DDTests<br>Parameters: testuser3</td>
+<td></td>
+<td>3</td>
+<td>api.test.DDTests@23f7d05d</td></tr>
+<tr>
+<td title='api.test.UserTests.testPostUser()'><b>testPostUser</b><br>Test class: api.test.UserTests</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserTests@4df50bcc</td></tr>
+<tr>
+<td title='api.test.UserTests.testUpdateUser()'><b>testUpdateUser</b><br>Test class: api.test.UserTests</td>
+<td></td>
+<td>7</td>
+<td>api.test.UserTests@4df50bcc</td></tr>
+<tr>
+<td title='api.test.DDTests.testPostUser()'><b>testPostUser</b><br>Test class: api.test.DDTests<br>Parameters: 1050, testuser5, Bob, White, e@gmail.com, test@5, 1234567899</td>
+<td></td>
+<td>1</td>
+<td>api.test.DDTests@23f7d05d</td></tr>
+<tr>
+<td title='api.test.DDTests.testPostUser()'><b>testPostUser</b><br>Test class: api.test.DDTests<br>Parameters: 1040, testuser4, Alice, Brown, d@gmail.com, test@4, 1234567898</td>
+<td></td>
+<td>1</td>
+<td>api.test.DDTests@23f7d05d</td></tr>
+<tr>
+<td title='api.test.DDTests.testPostUser()'><b>testPostUser</b><br>Test class: api.test.DDTests<br>Parameters: 1030, testuser3, Smith, Steve, c@gmail.com, test@3, 1234567897</td>
+<td></td>
+<td>1</td>
+<td>api.test.DDTests@23f7d05d</td></tr>
+<tr>
+<td title='api.test.DDTests.testPostUser()'><b>testPostUser</b><br>Test class: api.test.DDTests<br>Parameters: 1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897</td>
+<td></td>
+<td>3</td>
+<td>api.test.DDTests@23f7d05d</td></tr>
+<tr>
+<td title='api.test.UserTests.testDeleteUser()'><b>testDeleteUser</b><br>Test class: api.test.UserTests</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserTests@4df50bcc</td></tr>
+<tr>
+<td title='api.test.DDTests.testPostUser()'><b>testPostUser</b><br>Test class: api.test.DDTests<br>Parameters: 1020, testuser2, Kim, Kom, b@gmail.com, test@2, 1234567897</td>
+<td></td>
+<td>1</td>
+<td>api.test.DDTests@23f7d05d</td></tr>
+<tr>
+<td title='api.test.UserTests.testGetUser()'><b>testGetUser</b><br>Test class: api.test.UserTests</td>
+<td></td>
+<td>6</td>
+<td>api.test.UserTests@4df50bcc</td></tr>
+</table><p>
+</body>
+</html>
